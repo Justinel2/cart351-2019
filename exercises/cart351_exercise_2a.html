@@ -39,15 +39,15 @@
     let paragraph = document.getElementById('displayText');
 
     // Make each box clickable with a click event
-    box[0].addEventListener('click', handleBoxClick);
-    box[1].addEventListener('click', handleBoxClick);
-    box[2].addEventListener('click', handleBoxClick);
+    box[0].addEventListener('click', handleClick);
+    box[1].addEventListener('click', handleClick);
+    box[2].addEventListener('click', handleClick);
 
     // Make the paragraphs clickable with a click event
-    paragraph.addEventListener('click', handlePClick);
+    paragraph.addEventListener('click', handleClick);
 
     // Function that handles actions when a box is clicked
-    function handleBoxClick() {
+    function handleClick() {
       // If the first box is clicked
       if (this == document.getElementById("c")) {
         // Change text
@@ -56,29 +56,25 @@
         paragraph.style.display = "inline-block";
       }
       // If the second box is clicked
-      if (this == document.getElementById("d")) {
+      else if (this == document.getElementById("d")) {
         // Change text
         paragraph.textContent = "This is Text For Box D";
         // Display text
         paragraph.style.display = "inline-block";
       }
       // If the third box is clicked
-      if (this == document.getElementById("e")) {
+      else if (this == document.getElementById("e")) {
         // Change text
         paragraph.textContent = "This is Text For Box E";
         // Display text
         paragraph.style.display = "inline-block";
       }
-    }
 
-    // Function that hides the diplayed paragraph when clicked
-    function handlePClick() {
-      if (this.style.display = "inline-block") {
+      // hides the diplayed paragraph when clicked
+      else if (this.style.display = "inline-block") {
         paragraph.style.display = 'none';
       }
     }
-
-
   } //on load
 
   </script>
