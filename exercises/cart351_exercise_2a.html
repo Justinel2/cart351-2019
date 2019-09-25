@@ -39,12 +39,15 @@
     let paragraph = document.getElementById('displayText');
 
     // Make each box clickable with a click event
-    box[0].addEventListener('click', handleClick);
-    box[1].addEventListener('click', handleClick);
-    box[2].addEventListener('click', handleClick);
+    box[0].addEventListener('click', handleBoxClick);
+    box[1].addEventListener('click', handleBoxClick);
+    box[2].addEventListener('click', handleBoxClick);
+
+    // Make the paragraphs clickable with a click event
+    paragraph.addEventListener('click', handlePClick);
 
     // Function that handles actions when a box is clicked
-    function handleClick() {
+    function handleBoxClick() {
       // If the first box is clicked
       if (this == document.getElementById("c")) {
         // Change text
@@ -66,8 +69,15 @@
         // Display text
         paragraph.style.display = "inline-block";
       }
-
     }
+
+    // Function that hides the diplayed paragraph when clicked
+    function handlePClick() {
+      if (this.style.display = "inline-block") {
+        paragraph.style.display = 'none';
+      }
+    }
+
 
   } //on load
 
