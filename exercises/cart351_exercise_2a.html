@@ -36,11 +36,38 @@
 
     // define variables
     let box = document.getElementsByClassName('box');
+    let paragraph = document.getElementById('displayText');
 
     // Make each box clickable with a click event
-    box.addEventListener('click', handleClick);
+    box[0].addEventListener('click', handleClick);
+    box[1].addEventListener('click', handleClick);
+    box[2].addEventListener('click', handleClick);
 
     // Function that handles actions when a box is clicked
+    function handleClick() {
+      // If the first box is clicked
+      if (this == document.getElementById("c")) {
+        // Change text
+        paragraph.textContent = "This is Text For Box C";
+        // Display text
+        paragraph.style.display = "inline-block";
+      }
+      // If the second box is clicked
+      if (this == document.getElementById("d")) {
+        // Change text
+        paragraph.textContent = "This is Text For Box D";
+        // Display text
+        paragraph.style.display = "inline-block";
+      }
+      // If the third box is clicked
+      if (this == document.getElementById("e")) {
+        // Change text
+        paragraph.textContent = "This is Text For Box E";
+        // Display text
+        paragraph.style.display = "inline-block";
+      }
+
+    }
 
   } //on load
 
