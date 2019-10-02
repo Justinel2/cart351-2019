@@ -91,7 +91,7 @@ let freeShapeList = []; //variable to hold your list of free shapes
 
 /* STEP 2:: CREATE 10 RectShapeObject instances and put into the rectList */
 for (var i = 0; i < 10; i++) {
-  rectList.push(new RectShapeObject(50,50,50,50,contextA,canvasAniA));
+  rectList.push(new RectShapeObject(Math.floor((Math.random() * 1000) + 1),50,50,50,4,3,contextA,canvasAniA));
 }
 /* STEP 3:: CREATE 10 EllipseShapeObject instances and put into the ellipsesList */
 for (var i = 0; i < 10; i++) {
@@ -117,6 +117,7 @@ function animationLoop(){
     /* STEP 6:: go through the rectList  and display and update shapes  */
     for (var i = 0; i < rectList.length; i++) {
       rectList[i].display();
+      rectList[i].update();
     }
   }
   else if(mouseIn ==="canvasAniB"){
@@ -125,6 +126,7 @@ function animationLoop(){
       /* STEP 7:: go through the ellipsesList  and display and update shapes  */
       for (var i = 0; i < ellipsesList.length; i++) {
         ellipsesList[i].display();
+        ellipsesList[i].update();
       }
 
   }
@@ -134,6 +136,7 @@ function animationLoop(){
         /* STEP 8:: go through the freeShapeList  and display and update shapes  */
       for (var i = 0; i < ellipsesList.length; i++) {
         freeShapeList[i].display();
+        freeShapeList[i].update();
       }
 
   }
@@ -148,13 +151,15 @@ with the potential instance of this shape
 */
 
 
-function RectShapeObject(x,y,w,h,context,canvas){
+function RectShapeObject(x,y,w,h,speedX,speedY,context,canvas){
   this.context =context;
   this.canvas = canvas;
   this.x =x;
   this.y =y;
   this.w=w;
   this.h=h;
+  this.speedX=speedX;
+  this.speedY=speedY;
   // method to display - needs to be filled in
   this.display = function(){
     this.context.fillStyle = "#db1d2d";
@@ -162,7 +167,15 @@ function RectShapeObject(x,y,w,h,context,canvas){
   }
   // method to update (animation) - needs to be filled in
   this.update = function(){
+    if(this.x+this.w > this.canvas.width || this.x < 0) {
+      this.speedX *= -1;
+    }
+    if(this.y+this.h > this.canvas.height || this.y < 0) {
+      this.speedY *= -1;
+    }
 
+    this.x += this.speedX;
+    this.y += this.speedY;
   }
 
 
