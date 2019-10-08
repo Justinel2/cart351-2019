@@ -1,0 +1,82 @@
+{
+  "Label":"Public Transport Habit",
+  "SubLabel":"This data is loaded from a json file::",
+
+
+  "Days":
+  [
+    {"Count": 1,
+    "Times": "",
+    "Duration": "",
+
+    "Itenary": {
+      "Entrance": "",
+      "Exit": "",
+      "Final_Destination": ""
+      },
+
+    "Type": {
+        "Carriage": "",
+        "Number": 1963,
+        "Direction": ""
+      },
+    "State": "ha"
+    },
+
+    {"Count": 2,
+    "Times": "",
+    "Duration": "",
+
+    "Itenary": {
+      "Entrance": "",
+      "Exit": "",
+      "Final_Destination": ""
+      },
+
+    "Type": {
+        "Carriage": "",
+        "Number": 1963,
+        "Direction": ""
+      },
+    "State": "hi"
+    },
+
+    {"Count": 3,
+      "Times": "",
+      "Duration": "",
+
+      "Itenary": {
+        "Entrance": "",
+        "Exit": "",
+        "Final_Destination": ""
+        },
+
+      "Type": {
+        "Carriage": "",
+        "Number": 1963,
+        "Direction": ""
+        },
+      "State": "hu"
+    },
+
+    {"Count": 4,
+    "Times": "",
+    "Duration": "",
+
+    "Itenary": {
+      "Entrance": "",
+      "Exit": "",
+      "Final_Destination": ""
+    },
+
+    "Type": {
+      "Carriage": "",
+      "Number": 1963,
+      "Direction": ""
+      },
+    "State": "lol"
+    }
+
+
+   ]
+  }
