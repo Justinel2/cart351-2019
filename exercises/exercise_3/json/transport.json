@@ -5,76 +5,72 @@
 
   "Days":
   [
-    {"Count": 1,
-    "Times": "",
-    "Duration": "",
+    {"Count": "Day 1: Wednesday, October 2nd 2019",
+    "Duration": "20 minutes",
 
     "Itenary": {
-      "Entrance": "",
-      "Exit": "",
-      "Final_Destination": ""
+      "Entrance": "Beaubien Station, 7h55 AM",
+      "Exit": "Guy-Concordia Station, 8H15 AM",
+      "Final_Destination": "Concordia University"
       },
 
     "Type": {
-        "Carriage": "",
-        "Number": 1963,
-        "Direction": ""
+        "Carriage": "Metro",
+        "Number": "Green and orange lines",
+        "Direction": "Côte-Vertu and Angrignon"
       },
-    "State": "ha"
+    "State": "Really busy. I almost did not have any space in the orange lines line metro. I had a class at 8h30AM"
     },
 
-    {"Count": 2,
-    "Times": "",
-    "Duration": "",
+    {"Count": "Day 2: Thursday, October 3rd 2019",
+    "Duration": "25 minutes",
 
     "Itenary": {
-      "Entrance": "",
-      "Exit": "",
-      "Final_Destination": ""
+      "Entrance": "Beaubien Station, 9h56 AM",
+      "Exit": "Guy-Concordia Station, 10h21 AM",
+      "Final_Destination": "Concordia University"
       },
 
     "Type": {
-        "Carriage": "",
-        "Number": 1963,
-        "Direction": ""
+        "Carriage": "Metro",
+        "Number": "Green and orange lines",
+        "Direction": "Côte-Vertu and Angrignon"
       },
-    "State": "hi"
+    "State": "A bit crowded but it was less than the previous day. I did not have a class until 3PM so I felt less stressed."
     },
 
-    {"Count": 3,
-      "Times": "",
-      "Duration": "",
+    {"Count": "Day 3: Friday, October 4th 2019",
+      "Duration": "21 minutes",
 
       "Itenary": {
-        "Entrance": "",
-        "Exit": "",
-        "Final_Destination": ""
+        "Entrance": "Beaubien Station, 7h51 AM",
+        "Exit": "Guy-Concordia Station, 8h12 AM",
+        "Final_Destination": "Concordia University"
         },
 
       "Type": {
-        "Carriage": "",
-        "Number": 1963,
-        "Direction": ""
+        "Carriage": "Metro",
+        "Number": "Green and orange lines",
+        "Direction": "Côte-Vertu and Angrignon"
         },
-      "State": "hu"
+      "State": "The metro was full. People were pushing each other on the orange lines line."
     },
 
-    {"Count": 4,
-    "Times": "",
-    "Duration": "",
+    {"Count": "Day 4: Saturday, October 5th 2019",
+    "Duration": "40 minutes",
 
     "Itenary": {
-      "Entrance": "",
-      "Exit": "",
-      "Final_Destination": ""
+      "Entrance": "Montmorency Station, 9h34",
+      "Exit": "Gare de Sainte-Thérèse",
+      "Final_Destination": "My parents' place"
     },
 
     "Type": {
-      "Carriage": "",
-      "Number": 1963,
-      "Direction": ""
+      "Carriage": "Bus",
+      "Number": "9",
+      "Direction": "Saint-Jerôme"
       },
-    "State": "lol"
+    "State": "The bus is going fast. There is not that much people in the bus and I am able to sit"
     }
 
 
