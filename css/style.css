@@ -74,6 +74,7 @@ html, body {
 #media {
     width: 100%;
     font-size: 4vw;
+    padding: 10vh 0;
 }
 #project {
     height: 95vh;
